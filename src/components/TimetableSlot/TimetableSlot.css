@@ -1,0 +1,28 @@
+.timetableslot__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 14px 12px 14px;
+
+    border-radius: 4px;
+    border: 1px solid #EDEDED;
+    background: rgba(85, 85, 85, 0.04);
+}
+
+.timetableslot__main.empty {
+    background-color: var(--content-colour);
+    opacity: 0.6;
+    height: 62px;
+}
+
+.timetableslot__unit {
+    color: var(--primary-text-colour);
+    font-size: var(--large-font-size);
+}
+
+.timetableslot__registration {
+    color: var(--secondary-text-colour);
+    font-size: var(--small-font-size);
+}

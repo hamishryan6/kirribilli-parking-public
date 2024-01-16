@@ -1,0 +1,9 @@
+.day {
+  padding: 48px;
+  background-color: #FAFAFA;
+}
+
+.week__list {
+  display: flex;
+  list-style: none;
+}

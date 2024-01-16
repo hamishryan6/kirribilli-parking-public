@@ -1,0 +1,68 @@
+.button__main {
+    display: flex;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 4px;
+    border-radius: 8px;
+
+    font-size: var(--medium-font-size);
+    font-weight: 600;
+    letter-spacing: calc(1em * 0.02)
+}
+
+.button__main:active {
+    opacity: 0.6;
+}
+
+.button__primary {
+    color: var(--background-colour);
+    background-color: var(--primary-colour);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.02);
+}
+
+.button__primary.button__destructive {
+    color: var(--background-colour);
+    background-color: var(--delete-red);
+    border-color: var(--red-border);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.02);
+}
+
+.button__secondary {
+    color: var(--secondary-text-colour);
+    background-color: var(--secondary-colour);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.02);
+}
+
+.button__secondary.button__destructive {
+    color: var(--red);
+    background-color: var(--red-background);
+    border-color: var(--red-border);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.02);
+}
+
+.button__tertiary {
+    padding: 14px;
+
+    color: #555;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.button__highlight {
+    color: #BA7847;
+    font-weight: 600;
+}
+
+.button__disabled {
+    opacity: 0.2 !important;
+}
+
+.button__disabled:active {
+    opacity: 0.2 !important;
+}
+
+.button__loading {
+    padding-block: 12px;
+}

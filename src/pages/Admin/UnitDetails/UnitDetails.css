@@ -1,0 +1,15 @@
+.bookings__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vehicles__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.vehicles__list>.booking__card-empty {
+    grid-column: 1/3;
+}

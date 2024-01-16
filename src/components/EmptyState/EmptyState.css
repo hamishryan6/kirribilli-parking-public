@@ -1,0 +1,27 @@
+.booking__card-empty {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 24px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(85, 83, 82, 0.08);
+    background-color: rgba(85, 83, 82, 0.04);
+}
+
+.text__block-small {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.text__block-small>p {
+    line-height: 140%;
+}
+
+.icon__no-parks {
+    fill: #555555;
+    fill-opacity: 0.4;
+    min-width: 40px;
+    width: 40px;
+}

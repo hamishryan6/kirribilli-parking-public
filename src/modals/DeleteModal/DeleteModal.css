@@ -1,0 +1,107 @@
+.modal__container {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100dvh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.32) 60%);
+    z-index: 10;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 24px 16px 16px 16px;
+    border-radius: 16px 16px 0px 0px;
+    gap: 20px;
+
+    border: 2px solid rgba(234, 219, 255, 0.12);
+    background: var(--content-colour);
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.12);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    opacity: 0.4;
+
+    animation: modal__slide-in 120ms ease-out forwards;
+}
+
+.modal.closed {
+
+    bottom: 0px;
+    opacity: 1;
+
+    animation: modal__slide-out 120ms ease-in forwards;
+
+}
+
+@keyframes modal__slide-in {
+    0% {
+        bottom: -100px;
+        opacity: 0.4;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes modal__slide-out {
+    0% {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: -100px;
+        opacity: 0.4;
+    }
+}
+
+.button__pair {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-width: 500px;
+    width: 100%;
+}
+
+@media (width > 500px) {
+
+    .modal {
+        max-width: 500px;
+        padding: 16px;
+        border-radius: 16px;
+        margin-inline: auto;
+    }
+
+    @keyframes modal__slide-in {
+        0% {
+            bottom: -100px;
+            opacity: 0.4;
+        }
+
+        100% {
+            bottom: 40px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes modal__slide-out {
+        0% {
+            bottom: 40px;
+            opacity: 1;
+        }
+
+        100% {
+            bottom: -100px;
+            opacity: 0.4;
+        }
+    }
+
+}

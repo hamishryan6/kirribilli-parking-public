@@ -1,0 +1,39 @@
+.date__main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.date__weekday {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.date__number {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-text-colour);
+}
+
+.date__selected>.date__weekday {
+    color: var(--focus-colour);
+}
+
+.date__selected>.date__number {
+    background-color: var(--primary-colour);
+    color: var(--background-colour);
+    font-weight: 600;
+}
+
+.date__main.date__inactive {
+    opacity: 0.32;
+}

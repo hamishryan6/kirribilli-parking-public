@@ -1,0 +1,43 @@
+.toggle__main {
+    display: grid;
+    position: relative;
+
+    border-radius: 8px;
+    background: var(--border-colour);
+    box-sizing: var(--primary-shadow);
+    padding: 2px;
+}
+
+.toggle__item {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+
+    color: var(--secondary-text-colour);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+}
+
+.toggle__item.active {
+    font-weight: 600;
+}
+
+.toggle__selection__container {
+    display: flex;
+    padding: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+
+    transition: 120ms ease-in-out;
+}
+
+.toggle__selection {
+    flex: 1;
+    background-color: var(--content-colour);
+    border-radius: 6px;
+    box-shadow: var(--primary-shadow);
+}

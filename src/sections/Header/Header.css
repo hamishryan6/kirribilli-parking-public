@@ -1,0 +1,39 @@
+header {
+    padding: 8px 16px;
+    background-color: var(--primary-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+}
+
+.logo__small {
+    height: 30px;
+    fill: var(--background-colour);
+}
+
+.icon__container {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__header {
+    fill: var(--background-colour);
+    width: 20px;
+}
+
+.header__content>h3 {
+    color: var(--background-colour);
+    text-align: center;
+    font-weight: 600;
+}

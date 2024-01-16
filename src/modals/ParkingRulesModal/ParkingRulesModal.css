@@ -1,0 +1,54 @@
+.modal__container.fixed {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.32) 24%);
+}
+
+.modal.fixed {
+    min-height: 76dvh;
+    justify-content: flex-start;
+}
+
+.parking__rule__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 12px;
+    flex: 1;
+}
+
+.parking__rule {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.icon__rule__container {
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__rule {
+    fill: var(--secondary-faded-colour);
+    min-width: 28px;
+    width: 28px;
+}
+
+.parking__rule>p {
+    color: var(--secondary-text-colour);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.modal.fixed>.button__main {
+    flex: unset
+}
+
+@media (width > 500px) {
+
+    .modal.fixed {
+        min-height: unset;
+    }
+}

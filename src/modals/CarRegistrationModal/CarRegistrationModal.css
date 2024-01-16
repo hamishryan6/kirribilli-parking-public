@@ -1,0 +1,34 @@
+.checkbox__main {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.checkbox__main:active {
+    opacity: 0.6;
+}
+
+.checkbox {
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border-colour);
+    border-radius: 8px;
+    box-shadow: var(--primary-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: ease-in 80ms;
+}
+
+.checkbox.selected {
+    background-color: var(--primary-colour);
+    transition: ease-in 80ms;
+}
+
+.checkbox>.icon__check {
+    width: 14px;
+    fill: var(--background-colour)
+}

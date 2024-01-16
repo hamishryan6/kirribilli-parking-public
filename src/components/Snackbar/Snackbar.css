@@ -1,0 +1,83 @@
+.snackbar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    animation: snackbar__animation 2800ms ease-in-out forwards 200ms;
+}
+
+.snackbar__main {
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 8px;
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.04);
+
+}
+
+@keyframes snackbar__animation {
+    0% {
+        bottom: 0px;
+        opacity: 0;
+    }
+
+    20% {
+        bottom: 16px;
+        opacity: 1;
+    }
+
+    80% {
+        bottom: 16px;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+
+.snackbar__success {
+    border: 1px solid var(--green-border);
+    background: var(--green-background);
+}
+
+.snackbar__error {
+    border: 1px solid var(--red-border);
+    background: var(--red-background);
+}
+
+.snackbar__alert {
+    border: 1px solid var(--grey-border);
+    background: var(--grey-background);
+}
+
+.snackbar__main>p {
+    color: var(--primary-text-colour);
+    font-size: var(--medium-font-size);
+    font-weight: 500;
+}
+
+.icon__success {
+    width: 16px;
+    fill: var(--green)
+}
+
+.icon__error {
+    width: 20px;
+    fill: var(--red)
+}
+
+.icon__alert {
+    width: 20px;
+    fill: var(--grey)
+}

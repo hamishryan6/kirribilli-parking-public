@@ -1,0 +1,21 @@
+.timetable__parks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.calendar__times.bookings{
+    grid-template-columns: auto 1fr 1fr;
+}
+
+.calendar__timeslots {
+    display: flex;
+    flex-direction: column;
+    padding-top: 26px;
+    gap: 12px;
+}
+
+.calendar__timeslots>p {
+    height: 62px;
+    color: var(--secondary-faded-colour)
+}
